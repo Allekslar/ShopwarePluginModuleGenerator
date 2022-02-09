@@ -1,0 +1,37 @@
+import "./page/{{ name }}-list";
+import "./page/{{ name }}-detail";
+import "./page/{{ name }}-create";
+
+Shopware.Module.register("{{ name }}", {
+    type: "plugin",
+    name: "{{ labelName }}",
+    title: "{{ labelName }}",
+    description: "{{ labelName }} description",
+    color: "#ff3d58",
+    icon: "default-basic-shape-square",
+
+    routes: {
+        list: {
+            component: "{{ name }}-list",
+            path: "list"
+        },
+        detail: {
+            component: "{{ name }}-detail",
+            path: "detail/:id",
+            meta: {
+                parentPath: "{{ routeName }}.list"
+            }
+        }
+    },
+
+    navigation: [
+        {
+            label: "{{ labelName }}",
+            color: "#ff3d58",
+            path: "{{ routeName }}.list",
+            icon: "default-basic-shape-square",
+            parent: "sw-catalogue",
+            position: 100,
+        },
+    ],
+});

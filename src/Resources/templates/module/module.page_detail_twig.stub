@@ -1,0 +1,18 @@
+{% block {{ twigModule }}_detail %}
+	<sw-page class="{{ name }}-detail">
+		{% block {{ twigModule }}_detail_header %}
+			<template #smart-bar-header></template>
+		{% endblock %}
+
+		{% block {{ twigModule }}_detail_actions %}
+			<template #smart-bar-actions>
+				{% block {{ twigModule }}_detail_actions_edit %}
+                {% endblock %}
+			</template>
+		{% endblock %}
+
+		{% block {{ twigModule }}_detail_content %}
+			<template #content></template>
+		{% endblock %}
+	</sw-page>
+{% endblock %}

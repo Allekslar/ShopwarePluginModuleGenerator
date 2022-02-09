@@ -1,0 +1,41 @@
+@import "~scss/variables";
+
+${{ name }}-list-color-error: $color-crimson-500;
+${{ name }}-list-color-success: $color-emerald-500;
+
+.{{ name }}-list {
+    .{{ name }}-list__content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .is--inactive {
+        color: ${{ name }}-list-color-error;
+    }
+
+    .is--active {
+        color: ${{ name }}-list-color-success;
+    }
+
+    .{{ name }}-list__metadata-customer-guest-label {
+        margin: 0 0 0 12px;
+        text-align: center;
+    }
+
+    .sw-label.{{ name }}-list__requested-group-label {
+        background: $color-module-orange-500;
+        color: $color-white;
+        font-weight: 600;
+    }
+}
+
+.{{ name }}-list__sidebar {
+    .sw-sidebar-item__scrollable-container {
+        padding: 0 25px;
+    }
+
+    .sw-filter-panel {
+        padding: 0;
+    }
+}

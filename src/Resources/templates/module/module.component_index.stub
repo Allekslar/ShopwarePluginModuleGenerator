@@ -1,0 +1,30 @@
+import template from "./{{ name }}-action.html.twig";
+import "./{{ name }}-action.scss";
+
+const { Component } = Shopware;
+
+Component.register("{{ name }}-action", {
+    template,
+    inject: [],
+
+    mixins: [],
+
+    props: {},
+
+    data() {
+        return {};
+    },
+
+    metaInfo() {
+        return {
+            title: this.$createTitle(),
+        };
+    },
+    computed: {},
+
+    watch: {},
+
+    created() {},
+
+    methods: {},
+});

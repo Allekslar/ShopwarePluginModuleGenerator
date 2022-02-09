@@ -1,0 +1,23 @@
+Shopware.Service('privileges').addPrivilegeMappingEntry({
+    category: 'permissions',
+    parent: null,
+    key: 'your_key',
+    roles: {
+        viewer: {
+            privileges: [],
+            dependencies: []
+        },
+        editor: {
+            privileges: [],
+            dependencies: []
+        },
+        creator: {
+            privileges: [],
+            dependencies: []
+        },
+        deleter: {
+            privileges: [],
+            dependencies: []
+        }
+    }
+});

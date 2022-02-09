@@ -1,0 +1,32 @@
+{
+  "name": "allekslar/module-generator",
+  "description": "Creates the structure for new administration module",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "allekslar"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "AllekslarModuleGenerator\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "AllekslarModuleGenerator\\AllekslarModuleGenerator",
+    "label": {
+      "de-DE": "Administrations modul-generator Shopware 6",
+      "en-GB": "administration module-generator Shopware 6"
+    },
+    "description": {
+      "de-DE": "Erstellt die Struktur für das neue Administrationsmodul Shopware 6",
+      "en-GB": "Creates the structure for new administration module Shopware 6 "
+    },
+    "supportLink": {
+      "de-DE": "https://github.com/Allekslar",
+      "en-GB": "https://github.com/Allekslar"
+  }
+  }
+}

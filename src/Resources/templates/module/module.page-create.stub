@@ -1,0 +1,5 @@
+const { Component } = Shopware;
+
+Component.extend('{{ name }}-create', '{{ name }}-detail', {
+    methods: {}
+});

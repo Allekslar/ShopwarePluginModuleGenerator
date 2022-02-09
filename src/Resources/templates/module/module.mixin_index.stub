@@ -1,0 +1,5 @@
+const { Mixin } = Shopware;
+
+Mixin.register('{{ name }}-mixin', {
+
+});

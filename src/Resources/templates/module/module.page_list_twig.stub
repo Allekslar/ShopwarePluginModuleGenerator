@@ -1,0 +1,30 @@
+{% block {{ twigModule }}_list %}
+	<sw-page class="{{ name }}-list">
+
+		{% block {{ twigModule }}_list_search_bar %}
+			<template #search-bar></template>
+		{% endblock %}
+
+		{% block {{ twigModule }}_list_smart_bar_header %}
+			<template #smart-bar-header>
+				{% block {{ twigModule }}_list_smart_bar_header_title %}
+                {% endblock %}
+			</template>
+		{% endblock %}
+
+		{% block {{ twigModule }}_list_smart_bar_actions %}
+			<template #smart-bar-actions>
+				{% block {{ twigModule }}_list_smart_bar_actions_add %}
+                {% endblock %}
+			</template>
+		{% endblock %}
+
+		<template #content>
+			{% block {{ twigModule }}_list_content %}
+            {% endblock %}
+		</template>
+
+		{% block {{ twigModule }}_list_sidebar %}
+        {% endblock %}
+	</sw-page>
+{% endblock %}
