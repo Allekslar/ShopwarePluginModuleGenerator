@@ -1,4 +1,4 @@
-# Generates Administration Module Structure
+# Generates the administrative module structure for the Shopware 6 plugin.
 
 ![Generates Administration Module Structure](module-generator.jpg)
 
